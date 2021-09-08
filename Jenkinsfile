@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('First') {
             steps {
-                sh 'scripts/getPython.sh'
+                sh 'cat scripts/getPython.sh'
             }
         }
     }
