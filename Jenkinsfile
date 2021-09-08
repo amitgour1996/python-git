@@ -7,7 +7,7 @@ pipeline {
         stage('Second') {
             steps {
                 sh 'chmod +x scripts/listFolder.sh'
-                sh '/bin/bash scripts/listFolder.sh ${params.repoURL}'
+                sh '/bin/bash scripts/listFolder.sh $repoURL'
                 archiveArtifacts artifacts: '**/output.txt', followSymlinks: false, onlyIfSuccessful: true
             }
         }
