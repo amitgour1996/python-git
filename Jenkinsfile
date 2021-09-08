@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'k8s-worker-small' }
+    agent { label 'ec2-worker-u18-medium' }
     parameters {
         string(name: 'repoURL', defaultValue: 'https://git.ellucian.com/scm/dpe/appd-ansible-play.git', description: 'Git Repository URL?')
     }
